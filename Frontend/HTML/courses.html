@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Courses — Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/page.css">
+    <link rel="stylesheet" href="../CSS/courses.css">
+    <link rel="stylesheet" href="../CSS/theme.css">
+</head>
+<body>
+    <header id="headerPlaceholder"></header>
+    <main class="courses-page">
+        <section class="courses-page-header">
+            <!-- Left side: Course Title & Subtitle -->
+            <div class="header-left">
+                <h1 id="coursesTitle">Explore courses</h1>
+                <p>Find the course that fits your next step.</p>
+            </div>
+
+            <!-- Right side: Clean category selector without ugly label -->
+            <div class="header-right">
+                <label for="courseCategoryFilter" class="sr-only">Filter by category</label>
+                <div class="select-pill-box">
+                    <i class="fa-solid fa-sliders filter-icon"></i>
+                    <select id="courseCategoryFilter">
+                        <option value="0">All courses</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <p class="page-message" id="coursesMessage" role="status"></p>
+        <section class="course-grid" id="courseList"></section>
+    </main>
+    <footer id="footerPlaceholder"></footer>
+    <script src="../jquery-3.6.0.js"></script>
+    <script src="../SCRIPTS/session.js"></script>
+    <script src="../SCRIPTS/fetchNavAndFooter.js"></script>
+    <script src="../SCRIPTS/courses.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+:root {
+    --theme-ink: #342b40;
+    --theme-muted: #685f75;
+    --theme-purple: #76569f;
+    --theme-purple-dark: #5e4383;
+    --theme-lavender: #f0eafa;
+    --theme-lavender-soft: #fcfaff;
+    --theme-border: #e6deef;
+}
+
+body {
+    background-color: var(--theme-lavender-soft);
+    color: var(--theme-ink);
+}
+
+.auth-body {
+    background-color: var(--theme-lavender-soft);
+}
+
+header {
+    background: #fff;
+    border-bottom-color: var(--theme-border);
+}
+
+.brand-logo,
+.nav-links a,
+.icon-action i,
+.cart-icon-wrapper i,
+#logoutButton i {
+    color: var(--theme-ink);
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    color: var(--theme-purple);
+}
+
+.dropdown-menu {
+    background: #fff;
+    border-color: var(--theme-border);
+}
+
+.dropdown-menu a:hover {
+    background: var(--theme-lavender);
+    color: var(--theme-purple-dark);
+}
+
+.cart-badge {
+    background: var(--theme-purple);
+}
+
+#authIcon.user-link {
+    color: var(--theme-ink);
+}
+
+#authIcon.user-link i {
+    color: var(--theme-purple) !important;
+}
+
+.header-register {
+    background: var(--theme-purple);
+    border-color: var(--theme-purple);
+}
+
+.header-register:hover {
+    background: var(--theme-purple-dark);
+    border-color: var(--theme-purple-dark);
+}
+
+.page-container h1,
+.page-container h2,
+.admin-page > h1,
+.instructor-page > h1,
+.admin-page h2,
+.instructor-page h2,
+.profile-header h1,
+.enrolled-section h2,
+.header-left h1,
+#cartHeader h1,
+.checkout-header h1,
+.checkout-card h2,
+.card-details h3,
+.cart-title,
+.cart-price,
+.total-line,
+.user-details-list dd {
+    color: var(--theme-ink);
+}
+
+.page-message,
+.empty-state,
+.muted-copy,
+.admin-page > p,
+.instructor-page > p,
+.header-left p,
+.checkout-header p,
+.cart-desc,
+.details-placeholder,
+.summary-line {
+    color: var(--theme-muted);
+}
+
+.content-panel,
+.courses-page-header,
+.course-card,
+.auth-card,
+.admin-panel,
+.instructor-panel,
+.checkout-card,
+#cartSummary,
+#emptyCart,
+.cart-card {
+    background-color: #fff;
+    border-color: var(--theme-border);
+}
+
+.content-panel,
+.auth-card,
+.admin-panel,
+.instructor-panel,
+.checkout-card,
+#cartSummary,
+#emptyCart,
+.cart-card,
+.courses-page-header {
+    box-shadow: 0 8px 24px rgba(62, 43, 82, 0.06);
+}
+
+.btn-primary,
+.btn-auth-submit,
+.btn-enroll,
+#checkoutButton,
+#payButton,
+.home-page .header-register {
+    background-color: var(--theme-purple);
+    border-color: var(--theme-purple);
+    color: #fff;
+}
+
+.btn-primary:hover,
+.btn-auth-submit:hover,
+.btn-enroll:hover,
+#checkoutButton:hover,
+#payButton:hover,
+.home-page .header-register:hover {
+    background-color: var(--theme-purple-dark);
+    border-color: var(--theme-purple-dark);
+    color: #fff;
+}
+
+.btn-secondary {
+    background: var(--theme-lavender);
+    color: var(--theme-purple-dark);
+}
+
+.btn-secondary:hover,
+.user-dropdown-item:hover,
+.course-dropdown-item:hover {
+    background: #e8def5;
+    color: var(--theme-purple-dark);
+}
+
+.user-dropdown-item,
+.course-dropdown-item {
+    border-bottom-color: var(--theme-border);
+}
+
+.user-dropdown-item,
+.course-dropdown-item,
+.course-search input[type="search"] {
+    color: var(--theme-ink);
+}
+
+.form-group label,
+.stacked-form label,
+.card-details-form label,
+.payment-option {
+    color: var(--theme-ink);
+}
+
+.form-group input,
+.form-group select,
+.stacked-form input,
+.stacked-form select,
+.stacked-form textarea,
+.input-wrap input,
+.input-wrap select,
+.card-details-form input,
+.course-search input[type="search"],
+.select-pill-box select {
+    border-color: #d6cbe2;
+    color: var(--theme-ink);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.stacked-form input:focus,
+.stacked-form select:focus,
+.stacked-form textarea:focus,
+.input-wrap input:focus,
+.input-wrap select:focus,
+.card-details-form input:focus,
+.course-search input[type="search"]:focus,
+.select-pill-box select:focus {
+    border-color: var(--theme-purple);
+    box-shadow: 0 0 0 3px rgba(118, 86, 159, 0.16);
+    outline-color: #d8c7eb;
+}
+
+.forgot-link,
+.auth-footer a,
+.section-heading-row a,
+#emptyCart a {
+    color: var(--theme-purple-dark);
+}
+
+.payment-option:hover {
+    background: var(--theme-lavender-soft);
+    border-color: #c8b6dd;
+}
+
+.payment-option:has(input:checked) {
+    background: var(--theme-lavender);
+    border-color: var(--theme-purple);
+    box-shadow: 0 0 0 1px var(--theme-purple);
+    color: var(--theme-purple-dark);
+}
+
+.remove-btn {
+    background: var(--theme-lavender);
+    color: var(--theme-muted);
+}
+
+.remove-btn:hover {
+    background: #f9e9ed;
+    color: #a33c52;
+}
+
+.footer-logo,
+.footer-col h4 {
+    color: #fff;
+}
+
+footer {
+    background: #000;
+    border-top-color: #000;
+    color: #e4e1e8;
+}
+
+.footer-grid {
+    border-bottom-color: #333;
+}
+
+.footer-links a,
+.footer-desc {
+    color: #c5c1ca;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-socials a {
+    background: #222;
+}
+
+.footer-socials a:hover {
+    background: var(--theme-purple);
+}
+
+.footer-bottom,
+.footer-tagline {
+    color: #aaa5b0;
+}
+
+a:focus-visible,
+button:focus-visible,
+select:focus-visible {
+    outline: 3px solid #b99bd9;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+}

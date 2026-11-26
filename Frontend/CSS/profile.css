@@ -1,0 +1,53 @@
+.profile-page {
+    width: min(1120px, calc(100% - 40px));
+    max-width: none;
+    min-height: 55vh;
+    margin: 32px auto 60px;
+    padding: 0;
+}
+
+/* Header & Compact Messages */
+.profile-header {
+    margin-bottom: 24px;
+}
+
+.profile-header h1 {
+    margin: 0 0 6px;
+    color: #0f172a;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+/* Collapse empty message tags to avoid unwanted vertical gaps */
+.profile-page .page-message {
+    margin: 0;
+    min-height: 0;
+}
+
+.profile-page .page-message:not(:empty) {
+    margin-top: 6px;
+    margin-bottom: 4px;
+}
+
+/* Tighter, balanced section spacing */
+.profile-page section {
+    margin: 20px 0 28px;
+}
+
+.enrolled-section h2 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 650px) {
+    .profile-page {
+        width: calc(100% - 28px);
+        margin: 24px auto 40px;
+    }
+
+    .profile-header h1 {
+        font-size: 26px;
+    }
+}

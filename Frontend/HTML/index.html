@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy — Learn practical technology skills</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/theme.css">
+</head>
+
+<body>
+
+    <!-- Dynamic Header Injection Target -->
+    <header id="headerPlaceholder"></header>
+
+    <main class="home-page">
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-text">
+                <span class="hero-kicker"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> LEARN A SKILL. BUILD YOUR FUTURE.</span>
+                <h1>Skills that move<br>you <span>forward.</span></h1>
+                <p>Learn web development, data, cybersecurity, and cloud from practical courses designed to help you put new skills to work.</p>
+                <div class="hero-actions">
+                    <a href="courses.html?categoryID=0" class="btn-primary">Explore all courses <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    <a href="#categorySection" class="hero-text-link">Browse by subject</a>
+                </div>
+                <div class="hero-benefits" aria-label="Learning benefits">
+                    <span><i class="fa-solid fa-laptop-code" aria-hidden="true"></i> Hands-on learning</span>
+                    <span><i class="fa-solid fa-clock" aria-hidden="true"></i> Learn at your pace</span>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&auto=format&fit=crop&q=80"
+                    alt="Students collaborating">
+                <div class="hero-float-card">
+                    <span class="hero-float-icon"><i class="fa-solid fa-book-open" aria-hidden="true"></i></span>
+                    <span><strong>Your next skill starts here</strong><small>Explore courses by subject</small></span>
+                    <i class="fa-solid fa-arrow-right hero-float-arrow" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="learning-benefits" aria-label="About Academy courses">
+        <div><span class="benefit-icon"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i></span><span><strong>Learn from instructors</strong><small>Guidance from people in the field</small></span></div>
+        <div><span class="benefit-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></span><span><strong>Practice real skills</strong><small>Build understanding as you learn</small></span></div>
+        <div><span class="benefit-icon"><i class="fa-solid fa-route" aria-hidden="true"></i></span><span><strong>Choose your direction</strong><small>Explore topics that fit your goals</small></span></div>
+    </section>
+
+        <section class="category-section" id="categorySection">
+            <div class="section-header">
+                <span class="section-kicker">EXPLORE THE CATALOG</span>
+                <div class="section-heading-row">
+                    <div><h2>What would you like to learn?</h2>
+                    <p>Start with a subject and find a course that fits your next step.</p></div>
+                </div>
+            </div>
+
+            <div class="category-grid" id="categoryGrid"></div>
+        </section>
+
+        <section class="courses-section" id="coursesSection">
+            <div class="courses-header-row">
+                <div>
+                    <span class="section-kicker">START LEARNING</span>
+                    <h2>Courses to explore</h2>
+                    <p>Find a class, learn by doing, and build your next skill.</p>
+                </div>
+                <a href="courses.html?categoryID=0" class="view-all-link">View all courses <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+            <p class="page-message" id="homeMessage" role="status"></p>
+
+            <!-- Course Grid -->
+            <div class="course-grid" id="courseList"></div>
+        </section>
+    </main>
+
+    <!-- Dynamic Footer Injection Target -->
+    <footer id="footerPlaceholder"></footer>
+
+    <script src="../jquery-3.6.0.js"></script>
+    <script src="../SCRIPTS/session.js"></script>
+    <script src="../SCRIPTS/fetchNavAndFooter.js"></script>
+    <script src="../SCRIPTS/fetchCatAndProds.js"></script>
+</body>
+
+</html>

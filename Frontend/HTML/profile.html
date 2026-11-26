@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning — Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/page.css">
+    <link rel="stylesheet" href="../CSS/profile.css">
+    <link rel="stylesheet" href="../CSS/theme.css">
+</head>
+<body>
+    <header id="headerPlaceholder"></header>
+    <main class="profile-page">
+        <!-- Hidden anchor so profile.js can populate profileName without JS errors -->
+        <span id="profileName" hidden></span>
+
+        <div class="profile-header">
+            <h1>My Learning</h1>
+            <p class="page-message" id="purchaseMessage" role="status"></p>
+            <p class="page-message error-message" id="profileError" role="status"></p>
+        </div>
+
+        <section class="enrolled-section">
+            <h2 id="learningHeading">Enrolled courses</h2>
+            <div class="course-grid" id="enrolledCourses"></div>
+        </section>
+
+    </main>
+    <footer id="footerPlaceholder"></footer>
+    <script src="../jquery-3.6.0.js"></script>
+    <script src="../SCRIPTS/session.js"></script>
+    <script src="../SCRIPTS/fetchNavAndFooter.js"></script>
+    <script src="../SCRIPTS/profile.js"></script>
+</body>
+</html>
